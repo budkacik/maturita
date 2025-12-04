@@ -12,8 +12,8 @@ def get_price(distance_: int) -> float:
         return 0.35
 
 
-def jazdne(kilometre: int, cenaKM: float) -> str:
-    return f"cena je {kilometre * cenaKM:.02f}"
+def jazdne(kilometre: int, cena_km: float) -> str:
+    return f"cena je {kilometre * cena_km:.02f}"
 
 
 print(jazdne(distance, get_price(distance)))
