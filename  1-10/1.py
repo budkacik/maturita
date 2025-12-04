@@ -3,7 +3,7 @@ b = int(input())
 primes = [2]
 
 
-def generate_primes(prime_nums: list) -> list:
+def generate_primes(prime_nums: list[int]) -> list[int]:
     curr = prime_nums[-1] + 1
     is_prime = False
     while not is_prime:
@@ -17,7 +17,7 @@ def generate_primes(prime_nums: list) -> list:
     return prime_nums
 
 
-def get_prime_divs(n, prime_nums):
+def get_prime_divs(n: int, prime_nums: list[int]) -> list:
     goal = n
     divisors = []
     index = 0
@@ -36,7 +36,7 @@ def get_prime_divs(n, prime_nums):
     return [n, prime_nums, divisors]
 
 
-def nsd(divs1: list, divs2: list):
+def nsd(divs1: list[int | None], divs2: list[int | None]) -> int:
     divisor = 1
     for i in range(len(divs1)):
         for j in range(len(divs2)):
