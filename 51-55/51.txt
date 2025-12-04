@@ -1,0 +1,6 @@
+jahody 1.5 1.3
+ceresne 0.5 2.3
+pivo 3 0.9
+rozok 10 0.15
+citrony 1.2 1.35
+banany 2.26 0.95
