@@ -11,6 +11,7 @@ for line in file:
 file.close()
 
 age_max = -inf
+index = 0
 
 for i in range(len(ages)):
     if ages[i] > age_max:

@@ -2,7 +2,7 @@ file = open("51.txt", "r")
 sum = 0
 
 
-def space_generator(n):
+def space_generator(n: int) -> str:
     return " " * n
 
 
@@ -22,4 +22,3 @@ last_line = ("SPOLU:", "", f"{sum:.2f} EUR")
 
 print(block[0] * "*" + block[1] * "*" + block[2] * "*" + block[3] * "*")
 print(f"{last_line[0]}{space_generator(block[0] - len(last_line[0]))}{last_line[1]}{space_generator(block[1] - len(last_line[1]))}{last_line[1]}{space_generator(block[2] - len(last_line[1]))}{last_line[2]}")
-
