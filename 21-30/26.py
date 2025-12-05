@@ -48,17 +48,17 @@ nums = tuple(nums)
 
 stop = True
 loading_thread.join()
-print("\nDone!\n")
+print("\rDone!\n")
 stop = False
 
 
-def linear_search(vals: list[int], num: int) -> int:
+def linear_search(vals: tuple[int], num: int) -> int:
     for i in range(len(vals)):
         if vals[i] == num:
             return i
 
 
-def binary_search(vals: list[int], num: int) -> int:
+def binary_search(vals: tuple[int], num: int) -> list[int]:
     current_index = len(vals) // 2
     depth = 1
     while 1:
@@ -75,7 +75,7 @@ def binary_search(vals: list[int], num: int) -> int:
 
 loading_thread = threading.Thread(target=linear_loading)
 loading_thread.start()
-print(f"\nalgoritmus pre linearne vyhladavanie nasiel cislo {x} v zozname na indexe {linear_search(nums, x)}")
+print(f"\ralgoritmus pre linearne vyhladavanie nasiel cislo {x} v zozname na indexe {linear_search(nums, x)}")
 stop = True
 loading_thread.join()
 print("\nDone!\n")
@@ -84,10 +84,8 @@ stop = False
 
 loading_thread = threading.Thread(target=binary_loading)
 loading_thread.start()
-bin = binary_search(nums, x)
-print(f"\nalgoritmus pre binarne vyhladavanie nasiel cislo {x} v zozname na indexe {bin[0]}, pocet cyklov je {bin[1]}")
-print(f"nums[{bin[0]}] = {nums[bin[0]]}")
+bin_result = binary_search(nums, x)
+print(f"\ralgoritmus pre binarne vyhladavanie nasiel cislo {x} v zozname na indexe {bin_result[0]}, pocet cyklov je {bin_result[1]}")
+print(f"nums[{bin_result[0]}] = {nums[bin_result[0]]}")
 stop = True
 loading_thread.join()
-print("\nDone!\n")
-stop = False
