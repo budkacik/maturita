@@ -1,0 +1,9 @@
+December|Hracky|200.3
+December|PCHry|125.9
+December|Auta|361.4
+Januar|PCHry|450.9
+Januar|Auta|229.25
+Januar|Hracky|22.5
+Marec|PCHry|14.73
+Marec|Hracky|923.1
+Marec|Auta|675.2
